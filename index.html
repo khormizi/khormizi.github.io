@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Javad Heydari</title>
+  <title>Javad Heydari — Staff Applied Scientist</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,9 @@
       <a href="#" class="nav-logo">JH</a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#publications">Publications</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -25,8 +27,12 @@
     <div class="hero-content">
       <p class="hero-greeting">Hi, I'm</p>
       <h1 class="hero-name">Javad Heydari</h1>
-      <p class="hero-tagline">Software Engineer &amp; Problem Solver</p>
-      <a href="#contact" class="hero-cta">Get in Touch</a>
+      <p class="hero-tagline">Staff Applied Scientist &mdash; Autonomous Driving, ML Systems &amp; Planning</p>
+      <p class="hero-location">Seattle, WA</p>
+      <div class="hero-actions">
+        <a href="#experience" class="hero-cta">View My Work</a>
+        <a href="#contact" class="hero-cta hero-cta-outline">Get in Touch</a>
+      </div>
     </div>
   </header>
 
@@ -35,45 +41,248 @@
       <h2 class="section-title">About Me</h2>
       <div class="about-content">
         <p>
-          Welcome! I'm a software engineer who enjoys building things that live
-          on the internet. I focus on writing clean, efficient code and creating
-          great user experiences.
+          I'm a Staff Applied Scientist at <strong>Cruise</strong>, where I lead
+          cross-functional initiatives in autonomous vehicle planning and prediction.
+          My work spans end-to-end driving models, trajectory optimization,
+          behavior prediction, and production ML systems that operate on real roads.
         </p>
         <p>
-          When I'm not coding, you'll find me exploring new technologies,
-          contributing to open-source projects, and continuously learning.
+          Before Cruise, I was a Senior AI/ML Research Scientist at
+          <strong>LG Electronics</strong>, working on robotics path planning,
+          V2X misbehavior detection, and computer vision optimization.
         </p>
+        <p>
+          I hold a <strong>Ph.D. in Electrical Engineering</strong> and an
+          <strong>M.S. in Mathematics</strong> from Rensselaer Polytechnic Institute,
+          with earlier degrees from Sharif University of Technology.
+          My doctoral research focused on quickest statistical inference over networked data.
+        </p>
+      </div>
+
+      <div class="education">
+        <h3 class="subsection-title">Education</h3>
+        <div class="edu-item">
+          <span class="edu-degree">Ph.D. Electrical Engineering</span>
+          <span class="edu-school">Rensselaer Polytechnic Institute, Troy, NY</span>
+          <span class="edu-year">2014 &ndash; 2018</span>
+        </div>
+        <div class="edu-item">
+          <span class="edu-degree">M.S. Mathematics</span>
+          <span class="edu-school">Rensselaer Polytechnic Institute, Troy, NY</span>
+          <span class="edu-year">2014 &ndash; 2015</span>
+        </div>
+        <div class="edu-item">
+          <span class="edu-degree">M.S. Electrical Engineering</span>
+          <span class="edu-school">Sharif University of Technology, Tehran, Iran</span>
+          <span class="edu-year">2010 &ndash; 2012</span>
+        </div>
+        <div class="edu-item">
+          <span class="edu-degree">B.S. Electrical Engineering</span>
+          <span class="edu-school">Sharif University of Technology, Tehran, Iran</span>
+          <span class="edu-year">2006 &ndash; 2010</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="projects" class="section projects">
+  <section id="experience" class="section experience">
     <div class="container">
-      <h2 class="section-title">Projects</h2>
-      <div class="projects-grid">
+      <h2 class="section-title">Experience</h2>
 
-        <div class="project-card">
-          <div class="project-icon">01</div>
-          <h3>Project One</h3>
-          <p>A brief description of your first project. Replace this with your real work.</p>
-          <a href="#" class="project-link">View Project &rarr;</a>
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <h3 class="job-title">Staff Applied Scientist</h3>
+            <p class="job-company">Cruise &mdash; Behavior (Planning &amp; Prediction)</p>
+          </div>
+          <span class="job-date">2021 &ndash; Present</span>
         </div>
-
-        <div class="project-card">
-          <div class="project-icon">02</div>
-          <h3>Project Two</h3>
-          <p>A brief description of your second project. Replace this with your real work.</p>
-          <a href="#" class="project-link">View Project &rarr;</a>
-        </div>
-
-        <div class="project-card">
-          <div class="project-icon">03</div>
-          <h3>Project Three</h3>
-          <p>A brief description of your third project. Replace this with your real work.</p>
-          <a href="#" class="project-link">View Project &rarr;</a>
-        </div>
-
+        <ul class="job-highlights">
+          <li>
+            <strong>End-to-End Driving Models (GenAI):</strong>
+            Led cross-functional initiatives to develop sensor-to-action driving models;
+            drove multiple zero-to-one initiatives (route tokenization + fusion, trajectory decoder),
+            achieving <span class="metric">+12%</span> improvement in route following and
+            <span class="metric">+11%</span> reduction in trajectory generation error.
+          </li>
+          <li>
+            <strong>Ego Intent Reasoning Redesign:</strong>
+            Re-architected AV intent reasoning from a legacy stack into a modular, extensible pipeline;
+            reduced intent flickering by <span class="metric">17%</span> and
+            decreased "AV stuck" occurrences by <span class="metric">8%</span>.
+          </li>
+          <li>
+            <strong>ML Trajectory Ranking:</strong>
+            Co-led ML ranking to select optimal AV trajectories under safety/comfort constraints;
+            delivered <span class="metric">+38%</span> ride comfort and
+            <span class="metric">+13%</span> safety improvements.
+          </li>
+          <li>
+            <strong>Behavior Prediction (Hard Maneuvers):</strong>
+            Led upgrades to deep behavior prediction for complex maneuvers
+            (reverse parallel parking, K-turns); improved prediction accuracy by
+            <span class="metric">32%</span> (min L2 error).
+          </li>
+          <li>
+            <strong>Trajectory Cost Prediction:</strong>
+            Co-led design and productionization of a deep model to predict planning costs;
+            reduced stuckness incidents by <span class="metric">3&times;</span> while maintaining safety requirements.
+          </li>
+          <li>
+            <strong>Evaluation &amp; Metrics:</strong>
+            Partnered with Data Science to expand comfort/safety/stuckness metrics and close
+            offline-to-road gaps; enabled consistent <span class="metric">10%+</span>
+            improvements across multiple major releases.
+          </li>
+          <li>
+            <strong>Technical Leadership:</strong>
+            Mentored engineers and influenced roadmap decisions across planning, prediction,
+            and evaluation; owned scoping and success metrics for high-impact, multi-team initiatives.
+          </li>
+        </ul>
       </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <h3 class="job-title">Senior AI/ML Research Scientist</h3>
+            <p class="job-company">LG Electronics &mdash; Advanced AI</p>
+          </div>
+          <span class="job-date">2018 &ndash; 2021</span>
+        </div>
+        <ul class="job-highlights">
+          <li>
+            <strong>V2X Misbehavior Detection:</strong>
+            Led design and implementation of deep learning for detecting driving misbehavior
+            in smart transportation; improved precision/recall by <span class="metric">12%</span>;
+            built a misbehavior emulator to generate training data from normal driving streams.
+          </li>
+          <li>
+            <strong>Coverage Path Planning (Robotics):</strong>
+            Led overhaul of vacuum robot path planning; reduced overlap (proxy for cleaning time)
+            by <span class="metric">20%+</span> via reinforcement learning and algorithmic redesign.
+          </li>
+          <li>
+            <strong>Semi-supervised Learning:</strong>
+            Proposed an evolving GAN objective that transitions from universum to semi-supervised
+            loss; improved small-data classifier generalization by <span class="metric">+6%</span> accuracy.
+          </li>
+          <li>
+            <strong>CV Systems Optimization:</strong>
+            Reduced Mask R-CNN computational complexity by <span class="metric">57%</span>,
+            trading off a 20% increase in inference latency; validated accuracy/latency
+            trade-offs for deployment constraints.
+          </li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <h3 class="job-title">Summer Intern</h3>
+            <p class="job-company">Merck &amp; Co. &mdash; Quantitative Pharmacology, Rahway, NJ</p>
+          </div>
+          <span class="job-date">Summer 2017</span>
+        </div>
+        <ul class="job-highlights">
+          <li>
+            Built a computational platform for inhaled drug delivery simulation; accelerated
+            6-month experimental studies to <span class="metric">2 hours</span> with 95% confidence level.
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Core Expertise</h3>
+          <div class="skill-tags">
+            <span class="tag">Large-scale ML Systems</span>
+            <span class="tag">Autonomy Planning &amp; Prediction</span>
+            <span class="tag">Learning-to-Rank</span>
+            <span class="tag">End-to-End Deep Learning</span>
+            <span class="tag">Evaluation &amp; Metrics</span>
+            <span class="tag">Production ML</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">C++</span>
+            <span class="tag">Scala</span>
+            <span class="tag">MATLAB</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>ML / Data Science</h3>
+          <div class="skill-tags">
+            <span class="tag">PyTorch</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">scikit-learn</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">Pandas</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Data &amp; Infrastructure</h3>
+          <div class="skill-tags">
+            <span class="tag">Spark</span>
+            <span class="tag">Databricks</span>
+            <span class="tag">SageMaker</span>
+            <span class="tag">AWS (EC2/S3)</span>
+            <span class="tag">GCP</span>
+            <span class="tag">Azure</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications" class="section publications">
+    <div class="container">
+      <h2 class="section-title">Selected Publications</h2>
+      <ul class="pub-list">
+        <li class="pub-item">
+          <span class="pub-authors">A. Tajer, <strong>J. Heydari</strong>, H. V. Poor</span>
+          <span class="pub-title">"Active Sampling for the Quickest Detection of Markov Networks"</span>
+          <span class="pub-venue">IEEE Trans. Information Theory, 2022</span>
+        </li>
+        <li class="pub-item">
+          <span class="pub-authors"><strong>J. Heydari</strong>, A. Tajer</span>
+          <span class="pub-title">"Quickest Search and Learning Over Correlated Sequences: Theory and Application"</span>
+          <span class="pub-venue">IEEE Trans. Signal Processing, 2019</span>
+        </li>
+        <li class="pub-item">
+          <span class="pub-authors">G. Ren, O. Saha, <strong>J. Heydari</strong>, et al.</span>
+          <span class="pub-title">"Online Area Covering Autonomous Robot in Unknown Environments"</span>
+          <span class="pub-venue">KDD, 2020</span>
+        </li>
+        <li class="pub-item">
+          <span class="pub-authors">O. Saha, V. Ganapathy, <strong>J. Heydari</strong>, et al.</span>
+          <span class="pub-title">"Efficient Coverage Path Planning in Initially Unknown Environments"</span>
+          <span class="pub-venue">ICAR, 2021</span>
+        </li>
+        <li class="pub-item">
+          <span class="pub-authors"><strong>J. Heydari</strong>, V. Ganapathy, M. Shah</span>
+          <span class="pub-title">"Adaptive Task Offloading in Multi-Agent Mobile Edge Computing Networks"</span>
+          <span class="pub-venue">IEEE GLOBECOM, 2019</span>
+        </li>
+        <li class="pub-item">
+          <span class="pub-authors"><strong>J. Heydari</strong>, O. Saha, V. Ganapathy</span>
+          <span class="pub-title">"Reinforcement Learning-Based Coverage Path Planning with Implicit Cellular Decomposition"</span>
+          <span class="pub-venue">arXiv:2110.09018, 2021</span>
+        </li>
+      </ul>
+      <p class="pub-note">
+        Full publication list on
+        <a href="https://scholar.google.com/citations?hl=en&user=4oRhkNwAAAAJ" target="_blank">Google Scholar</a>.
+      </p>
     </div>
   </section>
 
@@ -81,13 +290,14 @@
     <div class="container">
       <h2 class="section-title">Contact</h2>
       <p class="contact-text">
-        I'm always open to new opportunities and conversations.
+        I'm always open to new opportunities, collaborations, and conversations.
         Feel free to reach out!
       </p>
       <div class="contact-links">
+        <a href="mailto:khormizi@gmail.com" class="contact-btn">Email</a>
+        <a href="https://www.linkedin.com/in/javad-heydari" target="_blank" class="contact-btn">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?hl=en&user=4oRhkNwAAAAJ" target="_blank" class="contact-btn">Google Scholar</a>
         <a href="https://github.com/khormizi" target="_blank" class="contact-btn">GitHub</a>
-        <a href="mailto:your-email@example.com" class="contact-btn">Email</a>
-        <a href="https://linkedin.com/in/" target="_blank" class="contact-btn">LinkedIn</a>
       </div>
     </div>
   </section>
